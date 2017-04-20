@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Translater</string>
+
+    <string name="url_translate">https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20170325T153056Z.a99afe06e3251ce8.eb58bb8e0d843097f5570181534d039ddd31ba9d</string>
+    <string name="url_getlangs">https://translate.yandex.net/api/v1.5/tr.json/getLangs?key=trnsl.1.1.20170325T153056Z.a99afe06e3251ce8.eb58bb8e0d843097f5570181534d039ddd31ba9d&amp;ui=ru</string>
+    <string name="url_dict">https://dictionary.yandex.net/api/v1/dicservice.json/lookup?key=dict.1.1.20170327T074417Z.658b28b70f7eb57f.31f082b27febca2798dde4ee2d7e41c43d3cccd4</string>
+
+    <string name="API_key_trans">trnsl.1.1.20170325T153056Z.a99afe06e3251ce8.eb58bb8e0d843097f5570181534d039ddd31ba9d</string>
+    <string name="API_key_dict">dict.1.1.20170327T074417Z.658b28b70f7eb57f.31f082b27febca2798dde4ee2d7e41c43d3cccd4</string>
+
+    <string name="err_timeout">Превышено время ожидания соединения</string>
+    <string name="err_no_network">Отсутствует интернет-соединение</string>
+    <string name="err_connection">Отсутвствует интернет-соединение</string>
+    <string name="err_server">Ошибка сервера</string>
+
+    <string name="label_lang_from">Язык оригинала</string>
+    <string name="label_lang_to">Язык перевода</string>
+
+    <string name="fav_hint">Найти в избранном</string>
+    <string name="hist_hint">Найти в истории</string>
+    <string name="favourite">Избранное</string>
+    <string name="history">История</string>
+
+    <string name="default_lang_from">en</string>
+    <string name="default_lang_to">ru</string>
+    <string name="default_lang_from_value">Английский</string>
+    <string name="default_lang_to_value">Русский</string>
+
+    <string name="column_fav">favourite</string>
+    <string name="column_hist">history</string>
+
+    <string name="clean_hist">Очистить историю</string>
+    <string name="find_in_history">Найти в истории</string>
+    <string name="clean_fav">Очистить избранное</string>
+
+    <string name="column_word_from">wordFrom</string>
+
+    <string name="msgYes">Да</string>
+    <string name="msgNo">Нет</string>
+
+    <string name="settings">Настройки</string>
+    <string name="show_dict">Показать словарь</string>
+    <string name="close">Закрыть</string>
+    <string name="switch_lang">Переключить</string>
+    <string name="delete">Удалить</string>
+
+</resources>

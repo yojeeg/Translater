@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_row"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="horizontal"
+    android:paddingEnd="5dp"
+    android:paddingStart="0dp">
+
+    <ToggleButton
+        android:id="@+id/toggle_fav"
+        style="@style/toggleButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_vertical|start"
+        android:background="@drawable/ic_toggle_bg" />
+
+    <RelativeLayout
+        android:id="@+id/relat"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/text_word"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_translation"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text_direction"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="end"
+        android:gravity="center_vertical|end"
+        android:textColor="@color/border"
+        android:textSize="18sp" />
+</LinearLayout>

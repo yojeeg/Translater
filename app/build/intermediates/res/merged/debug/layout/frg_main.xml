@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    android:id="@+id/main_layout"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rartamonov.translater.view.TabMain"
+    android:weightSum="1">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/action_bar"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <Button
+            android:id="@+id/buttonFrom"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:background="@color/colorPrimary"
+            android:text="@string/default_lang_from_value"
+            app:layout_constraintHorizontal_weight="2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/switchLanguage"/>
+
+        <ImageButton
+            android:id="@+id/switchLanguage"
+            android:contentDescription="@string/switch_lang"
+            android:layout_width="65dp"
+            android:layout_height="45dp"
+            android:background="@color/colorPrimary"
+            app:srcCompat="@drawable/ic_horizontal_arrows"
+            app:layout_constraintLeft_toRightOf="@+id/buttonFrom"
+            app:layout_constraintRight_toLeftOf="@+id/buttonTo"
+            app:layout_constraintHorizontal_weight="1" />
+
+        <Button
+            android:id="@+id/buttonTo"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:background="@color/colorPrimary"
+            android:text="@string/default_lang_to_value"
+            app:layout_constraintHorizontal_weight="2"
+            app:layout_constraintLeft_toRightOf="@+id/switchLanguage"
+            app:layout_constraintRight_toRightOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="0dp"
+        android:layout_height="125dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginStart="5dp"
+        android:background="@drawable/ic_square"
+        android:ems="10"
+        android:gravity="top"
+        android:padding="8dp"
+        android:inputType="textMultiLine"
+        android:labelFor="@+id/editText2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/action_bar"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="16dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/tools"
+
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="16dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toRightOf="@+id/textView"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText2"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ToggleButton
+            android:id="@+id/addToFav"
+            style="@style/toggleButton"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/ic_toggle_bg"
+            app:layout_constraintLeft_toLeftOf="@id/tools"
+            app:layout_constraintRight_toRightOf="@id/tools"
+            app:layout_constraintTop_toTopOf="@id/tools" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

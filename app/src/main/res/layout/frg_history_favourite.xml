@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/action_bar_fav"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="0dp"
+        app:layout_constraintHorizontal_bias="1.0">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabLayout_fav"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="90dp"
+            android:layout_marginRight="90dp"
+            android:layout_marginTop="0dp"
+            android:background="@color/colorPrimary"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="@id/action_bar_fav"
+            app:layout_constraintRight_toRightOf="@id/action_bar_fav"
+            app:layout_constraintTop_toTopOf="@id/action_bar_fav"
+            app:tabIndicatorColor="@color/black">
+
+        </android.support.design.widget.TabLayout>
+
+        <ImageButton
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            app:layout_constraintRight_toRightOf="@+id/action_bar_fav"
+            app:layout_constraintTop_toTopOf="@+id/action_bar_fav"
+            app:layout_constraintBottom_toBottomOf="@+id/action_bar_fav"
+            app:srcCompat="@drawable/ic_garbage"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="@string/delete"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <EditText
+        android:id="@+id/findHistory"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:background="@drawable/ic_square"
+        android:drawableStart="@drawable/ic_magnifier_tool"
+        android:drawablePadding="5dp"
+        android:hint="@string/find_in_history"
+        android:inputType="text"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintTop_toBottomOf="@+id/action_bar_fav"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:drawableStart="@drawable/ic_magnifier_tool" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/view_history_favourite"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/findHistory"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+
+</android.support.constraint.ConstraintLayout>

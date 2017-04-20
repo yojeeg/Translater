@@ -1,0 +1,117 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\Translater\app\src\main\AndroidManifest.xml:2:1-24:12
+	package
+		ADDED from D:\Translater\app\src\main\AndroidManifest.xml:3:5-48
+		INJECTED from D:\Translater\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Translater\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\Translater\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Translater\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\Translater\app\src\main\AndroidManifest.xml:2:11-69
+	android:versionCode
+		INJECTED from D:\Translater\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Translater\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from D:\Translater\app\src\main\AndroidManifest.xml:4:5-67
+	android:name
+		ADDED from D:\Translater\app\src\main\AndroidManifest.xml:4:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from D:\Translater\app\src\main\AndroidManifest.xml:5:5-79
+	android:name
+		ADDED from D:\Translater\app\src\main\AndroidManifest.xml:5:22-76
+application
+ADDED from D:\Translater\app\src\main\AndroidManifest.xml:6:5-22:19
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\rArtamonov\.android\build-cache\d462d304a05811c8465f2ff44c95717c00bef7f1\output\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:design:25.3.1] C:\Users\rArtamonov\.android\build-cache\bd63bd5cf200c9485abf3e9e2a141f2f565e187d\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\rArtamonov\.android\build-cache\ee5110e88edb848dccd009d57771d5a692665d7c\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\rArtamonov\.android\build-cache\10b99f95a1bf184eb3819f9e39fa09c4004c0064\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\rArtamonov\.android\build-cache\29b15e9c3c1142b9c65a5d72782eb9fe686eb56d\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:transition:25.3.1] C:\Users\rArtamonov\.android\build-cache\5737ec6406ca2d8fe47a7315c519533aa1939a61\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\rArtamonov\.android\build-cache\017e0ec030fdefdc507b031c59fe293624e6dd63\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\rArtamonov\.android\build-cache\7f12dec825fe859601fbd3bdc98f1ceafdb14e33\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\rArtamonov\.android\build-cache\c6d93b5a2c0260a847566778c3cd382866849a40\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\rArtamonov\.android\build-cache\507fe603295ffeac95636e94cb1511d9af0a3658\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\rArtamonov\.android\build-cache\881470253bcb70798cf9dada7c9ee3c6c27cb611\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\rArtamonov\.android\build-cache\53f46421ebc3c6d769c295a282a3d10b32b38ad5\output\AndroidManifest.xml:29:5-20
+	android:label
+		ADDED from D:\Translater\app\src\main\AndroidManifest.xml:9:9-41
+	android:supportsRtl
+		ADDED from D:\Translater\app\src\main\AndroidManifest.xml:11:9-35
+	android:roundIcon
+		ADDED from D:\Translater\app\src\main\AndroidManifest.xml:10:9-54
+	android:allowBackup
+		ADDED from D:\Translater\app\src\main\AndroidManifest.xml:7:9-35
+	android:icon
+		ADDED from D:\Translater\app\src\main\AndroidManifest.xml:8:9-43
+	android:theme
+		ADDED from D:\Translater\app\src\main\AndroidManifest.xml:13:9-40
+	android:name
+		ADDED from D:\Translater\app\src\main\AndroidManifest.xml:12:9-38
+activity#com.example.rartamonov.translater.MainActivity
+ADDED from D:\Translater\app\src\main\AndroidManifest.xml:14:9-20:20
+	android:screenOrientation
+		ADDED from D:\Translater\app\src\main\AndroidManifest.xml:14:90-126
+	android:windowSoftInputMode
+		ADDED from D:\Translater\app\src\main\AndroidManifest.xml:14:48-89
+	android:name
+		ADDED from D:\Translater\app\src\main\AndroidManifest.xml:14:19-47
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from D:\Translater\app\src\main\AndroidManifest.xml:15:13-19:29
+action#android.intent.action.MAIN
+ADDED from D:\Translater\app\src\main\AndroidManifest.xml:16:17-69
+	android:name
+		ADDED from D:\Translater\app\src\main\AndroidManifest.xml:16:25-66
+category#android.intent.category.LAUNCHER
+ADDED from D:\Translater\app\src\main\AndroidManifest.xml:18:17-77
+	android:name
+		ADDED from D:\Translater\app\src\main\AndroidManifest.xml:18:27-74
+activity#com.example.rartamonov.translater.LanguagesList
+ADDED from D:\Translater\app\src\main\AndroidManifest.xml:21:9-51
+	android:name
+		ADDED from D:\Translater\app\src\main\AndroidManifest.xml:21:19-48
+uses-sdk
+INJECTED from D:\Translater\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [io.realm:realm-android-library:3.1.2] C:\Users\rArtamonov\.android\build-cache\a41612fa21e0a54d1dd21f6363b9410ba53d8823\output\AndroidManifest.xml:7:5-9:41
+MERGED from [com.getkeepsafe.relinker:relinker:1.2.2] C:\Users\rArtamonov\.android\build-cache\ca753a5375c0f1239b25fd96a03bbd3ea965f3d7\output\AndroidManifest.xml:7:5-43
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\rArtamonov\.android\build-cache\d462d304a05811c8465f2ff44c95717c00bef7f1\output\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:design:25.3.1] C:\Users\rArtamonov\.android\build-cache\bd63bd5cf200c9485abf3e9e2a141f2f565e187d\output\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\rArtamonov\.android\build-cache\ee5110e88edb848dccd009d57771d5a692665d7c\output\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\rArtamonov\.android\build-cache\10b99f95a1bf184eb3819f9e39fa09c4004c0064\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\rArtamonov\.android\build-cache\29b15e9c3c1142b9c65a5d72782eb9fe686eb56d\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\rArtamonov\.android\build-cache\7f523ac308a39379d5894defa755cfea715c0a49\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:transition:25.3.1] C:\Users\rArtamonov\.android\build-cache\5737ec6406ca2d8fe47a7315c519533aa1939a61\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\rArtamonov\.android\build-cache\017e0ec030fdefdc507b031c59fe293624e6dd63\output\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\rArtamonov\.android\build-cache\7f12dec825fe859601fbd3bdc98f1ceafdb14e33\output\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\rArtamonov\.android\build-cache\c6d93b5a2c0260a847566778c3cd382866849a40\output\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\rArtamonov\.android\build-cache\507fe603295ffeac95636e94cb1511d9af0a3658\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\rArtamonov\.android\build-cache\881470253bcb70798cf9dada7c9ee3c6c27cb611\output\AndroidManifest.xml:21:5-23:61
+MERGED from [io.reactivex.rxjava2:rxandroid:2.0.1] C:\Users\rArtamonov\.android\build-cache\f0e2b6be11a0742a1a1d6249c0d28eebb36826e5\output\AndroidManifest.xml:19:5-43
+MERGED from [com.jakewharton:butterknife:8.5.1] C:\Users\rArtamonov\.android\build-cache\981eb65fe74b1c806ae25c95bfcfcd91bde0ed7f\output\AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\rArtamonov\.android\build-cache\53f46421ebc3c6d769c295a282a3d10b32b38ad5\output\AndroidManifest.xml:21:5-23:58
+	tools:overrideLibrary
+		ADDED from [com.android.support:design:25.3.1] C:\Users\rArtamonov\.android\build-cache\bd63bd5cf200c9485abf3e9e2a141f2f565e187d\output\AndroidManifest.xml:23:9-59
+	android:targetSdkVersion
+		INJECTED from D:\Translater\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Translater\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\Translater\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Translater\app\src\main\AndroidManifest.xml
+meta-data#android.support.VERSION
+ADDED from [com.android.support:design:25.3.1] C:\Users\rArtamonov\.android\build-cache\bd63bd5cf200c9485abf3e9e2a141f2f565e187d\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\rArtamonov\.android\build-cache\ee5110e88edb848dccd009d57771d5a692665d7c\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\rArtamonov\.android\build-cache\10b99f95a1bf184eb3819f9e39fa09c4004c0064\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\rArtamonov\.android\build-cache\29b15e9c3c1142b9c65a5d72782eb9fe686eb56d\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\rArtamonov\.android\build-cache\7f523ac308a39379d5894defa755cfea715c0a49\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:transition:25.3.1] C:\Users\rArtamonov\.android\build-cache\5737ec6406ca2d8fe47a7315c519533aa1939a61\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\rArtamonov\.android\build-cache\017e0ec030fdefdc507b031c59fe293624e6dd63\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\rArtamonov\.android\build-cache\7f12dec825fe859601fbd3bdc98f1ceafdb14e33\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\rArtamonov\.android\build-cache\c6d93b5a2c0260a847566778c3cd382866849a40\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\rArtamonov\.android\build-cache\507fe603295ffeac95636e94cb1511d9af0a3658\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\rArtamonov\.android\build-cache\881470253bcb70798cf9dada7c9ee3c6c27cb611\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\rArtamonov\.android\build-cache\53f46421ebc3c6d769c295a282a3d10b32b38ad5\output\AndroidManifest.xml:25:5-27:34
+	android:value
+		ADDED from [com.android.support:design:25.3.1] C:\Users\rArtamonov\.android\build-cache\bd63bd5cf200c9485abf3e9e2a141f2f565e187d\output\AndroidManifest.xml:27:9-31
+	android:name
+		ADDED from [com.android.support:design:25.3.1] C:\Users\rArtamonov\.android\build-cache\bd63bd5cf200c9485abf3e9e2a141f2f565e187d\output\AndroidManifest.xml:26:9-47
