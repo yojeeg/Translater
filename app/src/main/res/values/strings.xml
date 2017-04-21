@@ -8,11 +8,6 @@
     <string name="API_key_trans">trnsl.1.1.20170325T153056Z.a99afe06e3251ce8.eb58bb8e0d843097f5570181534d039ddd31ba9d</string>
     <string name="API_key_dict">dict.1.1.20170327T074417Z.658b28b70f7eb57f.31f082b27febca2798dde4ee2d7e41c43d3cccd4</string>
 
-    <string name="err_timeout">Превышено время ожидания соединения</string>
-    <string name="err_no_network">Отсутствует интернет-соединение</string>
-    <string name="err_connection">Отсутвствует интернет-соединение</string>
-    <string name="err_server">Ошибка сервера</string>
-
     <string name="label_lang_from">Язык оригинала</string>
     <string name="label_lang_to">Язык перевода</string>
 
