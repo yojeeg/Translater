@@ -46,5 +46,18 @@
         app:layout_constraintTop_toBottomOf="@id/action_bar_tool"
         android:layout_marginRight="8dp"
         android:layout_marginLeft="8dp" />
+    <android.support.v7.widget.SwitchCompat
+        android:id="@+id/switch_use_return"
+        android:layout_marginTop="8dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:checked="true"
+        android:text="@string/use_return"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/switch_show_dict"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp" />
 
 </android.support.constraint.ConstraintLayout>
