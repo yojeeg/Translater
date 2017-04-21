@@ -134,6 +134,18 @@ public class TabMain extends Fragment {
         }
     }
 
+    @OnEditorAction(R.id.editText2)
+    public boolean onEditorAction(int actionId) {
+        if ((actionId == EditorInfo.IME_ACTION_DONE)
+                &&isUseReturn()
+                &&!editText.getText().toString().isEmpty()) {
+            getTranslate(); // получение перевода
+            toolsPanel.setVisibility(View.VISIBLE);
+            return true;
+        }
+        return false;
+    }
+
     @OnFocusChange(R.id.editText2)
     public void onFocusChange(boolean hasFocus) { // на потерю фокуса пишем а историю и подменяем рамку на серую
         if (!hasFocus) {
@@ -254,19 +266,6 @@ public class TabMain extends Fragment {
             @Override
             public boolean onKey(View v, int keyCode, KeyEvent event) {
                 if ((keyCode == KeyEvent.KEYCODE_ENTER)&&isUseReturn()&&!editText.getText().toString().isEmpty()) {
-                    getTranslate(); // получение перевода
-                    toolsPanel.setVisibility(View.VISIBLE);
-                    return true;
-                }
-                return false;
-            }
-        });
-        editText.setOnEditorActionListener(new TextView.OnEditorActionListener() {
-            @Override
-            public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
-                if ((actionId == EditorInfo.IME_ACTION_DONE)
-                        &&isUseReturn()
-                        &&!editText.getText().toString().isEmpty()) {
                     getTranslate(); // получение перевода
                     toolsPanel.setVisibility(View.VISIBLE);
                     return true;
