@@ -10,14 +10,17 @@ import android.os.Bundle;
 import android.text.Html;
 import android.text.Spanned;
 import android.text.method.ScrollingMovementMethod;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 import android.widget.ToggleButton;
 
 import com.example.rartamonov.translater.LanguagesList;
@@ -39,6 +42,7 @@ import java.util.TreeMap;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import butterknife.OnEditorAction;
 import butterknife.OnFocusChange;
 import butterknife.OnTextChanged;
 import butterknife.OnTouch;
@@ -105,7 +109,7 @@ public class TabMain extends Fragment {
         // уберем клавиатуру
         InputMethodManager imm = (InputMethodManager) context.getSystemService(INPUT_METHOD_SERVICE);
         View currentFocus = getActivity().getCurrentFocus();
-        if (currentFocus!=null) {
+        if (currentFocus != null) {
             imm.hideSoftInputFromWindow(currentFocus.getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
         }
 
@@ -123,8 +127,10 @@ public class TabMain extends Fragment {
             textView.setText("");
             toolsPanel.setVisibility(View.INVISIBLE);
         } else {
-            getTranslate(); // получение перевода
-            toolsPanel.setVisibility(View.VISIBLE);
+            if (!isUseReturn()) {
+                getTranslate(); // получение перевода
+                toolsPanel.setVisibility(View.VISIBLE);
+            }
         }
     }
 
@@ -156,6 +162,7 @@ public class TabMain extends Fragment {
 
     public static final String myPrefs = "myprefs";
     public static final String keyShowDict = "showDict";
+    public static final String keyUseReturn = "useReturn";
     private static final String keyLangFrom = "lnagFrom";
     private static final String keyLangTo = "langTo";
     private SharedPreferences sharedPreferences;
@@ -234,14 +241,39 @@ public class TabMain extends Fragment {
 
         String textToButtonFrom = ValueOfCodeLang(langFromCode);
         String textToButtonTo = ValueOfCodeLang(langToCode);
-        if (textToButtonFrom.isEmpty()){
+        if (textToButtonFrom.isEmpty()) {
             buttonFrom.setText(getResources().getString(R.string.default_lang_from_value));
         } else buttonFrom.setText(textToButtonFrom);
-        if (textToButtonTo.isEmpty()){
+        if (textToButtonTo.isEmpty()) {
             buttonTo.setText(getResources().getString(R.string.default_lang_to_value));
         } else {
             buttonTo.setText(textToButtonTo);
         }
+
+        editText.setOnKeyListener(new View.OnKeyListener() {
+            @Override
+            public boolean onKey(View v, int keyCode, KeyEvent event) {
+                if ((keyCode == KeyEvent.KEYCODE_ENTER)&&isUseReturn()&&!editText.getText().toString().isEmpty()) {
+                    getTranslate(); // получение перевода
+                    toolsPanel.setVisibility(View.VISIBLE);
+                    return true;
+                }
+                return false;
+            }
+        });
+        editText.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+            @Override
+            public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+                if ((actionId == EditorInfo.IME_ACTION_DONE)
+                        &&isUseReturn()
+                        &&!editText.getText().toString().isEmpty()) {
+                    getTranslate(); // получение перевода
+                    toolsPanel.setVisibility(View.VISIBLE);
+                    return true;
+                }
+                return false;
+            }
+        });
 
         return view;
     }
@@ -434,6 +466,14 @@ public class TabMain extends Fragment {
             return sharedPreferences.getBoolean(keyShowDict, true);
         }
         return true;
+    }
+
+    public Boolean isUseReturn() {
+        sharedPreferences = context.getSharedPreferences(myPrefs, MODE_PRIVATE);
+        if (sharedPreferences.contains(keyUseReturn)) {
+            return sharedPreferences.getBoolean(keyUseReturn, false);
+        }
+        return false;
     }
 
     public void loadLangs() {
