@@ -35,6 +35,7 @@
 
     <string name="settings">Настройки</string>
     <string name="show_dict">Показать словарь</string>
+    <string name="use_return">Return для перевода</string>
     <string name="close">Закрыть</string>
     <string name="switch_lang">Переключить</string>
     <string name="delete">Удалить</string>
