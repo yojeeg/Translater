@@ -8,6 +8,7 @@ import android.support.v7.widget.SwitchCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
 import com.example.rartamonov.translater.R;
 
 import butterknife.BindView;
@@ -21,14 +22,27 @@ public class TabTools extends Fragment {
     private SharedPreferences sharedPreferences;
     public static final String myPrefs = "myprefs";
     public static final String keyShowDict = "showDict";
+    public static final String keyUseReturn = "useReturn";
 
     private Context context;
 
-    @BindView(R.id.switch_show_dict) SwitchCompat switchShowDict;
+    @BindView(R.id.switch_show_dict)
+    SwitchCompat switchShowDict;
+
     @OnClick(R.id.switch_show_dict)
     public void onClickSwitchShowDict() {
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putBoolean(keyShowDict, switchShowDict.isChecked());
+        editor.apply();
+    }
+
+    @BindView(R.id.switch_use_return)
+    SwitchCompat switchUseReturn;
+
+    @OnClick(R.id.switch_use_return)
+    public void onClickSwitchUseReturn() {
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putBoolean(keyUseReturn, switchUseReturn.isChecked());
         editor.apply();
     }
 
@@ -49,11 +63,14 @@ public class TabTools extends Fragment {
         sharedPreferences = context.getSharedPreferences(myPrefs, MODE_PRIVATE);
         if (sharedPreferences.contains(keyShowDict)) {
             switchShowDict.setChecked(sharedPreferences.getBoolean(keyShowDict, true));
-        } else
-        {
-            SharedPreferences.Editor editor = sharedPreferences.edit();
-            editor.putBoolean(keyShowDict, switchShowDict.isChecked());
-            editor.apply();
+        } else {
+            onClickSwitchShowDict();
+        }
+
+        if (sharedPreferences.contains(keyUseReturn)) {
+            switchUseReturn.setChecked(sharedPreferences.getBoolean(keyUseReturn, false));
+        } else {
+            onClickSwitchUseReturn();
         }
 
         return view;
